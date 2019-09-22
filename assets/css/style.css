@@ -15,8 +15,45 @@ body {
 }
 
 .header {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    'logo . navbar';
   grid-area: header;
   background-color: #a38068;
+  max-height: 15vh;
+}
+
+.logo {
+  grid-area: logo;
+  align-self: center;
+  justify-self: center;
+}
+
+.navbar {
+  grid-area: navbar;
+  justify-self: center;
+  align-self: end;
+  list-style-type: none;
+
+}
+
+.navbar li {
+  margin: 1rem;
+  display: inline;
+}
+
+.navbar li a {
+  text-decoration: none;
+  margin: none;
+  color: #fff;
+}
+
+.fa {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
 }
 
 .content {
@@ -25,7 +62,44 @@ body {
   grid-template-rows: auto;
   grid-template-areas: 
     '. content .';
+  height: 85vh;
+}
+
+.middle {
   grid-area: content;
+  display: grid;
+  grid-template-rows: auto; 
+  grid-template-columns: auto;
+  grid-template-areas: 
+    'home'
+    'solutions'
+    'reviews'
+    'blog'
+    'contact';
+}
+
+.home {
+  height: 100vh;
+}
+
+.solutions {
+  height: 100vh;
+
+}
+
+.reviews {
+  height: 100vh;
+
+}
+
+.blog {
+  height: 100vh;
+
+}
+
+.contact {
+  height: 100vh;
+
 }
 
 .footer {
