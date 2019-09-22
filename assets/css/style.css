@@ -66,6 +66,7 @@ body {
 }
 
 .middle {
+  background-color: #d3d3d3;
   grid-area: content;
   display: grid;
   grid-template-rows: auto; 
@@ -79,21 +80,32 @@ body {
 }
 
 .home {
-  height: 100vh;
 }
 
 .solutions {
-  height: 100vh;
+}
 
+.fa-edit {
+  color: #000;
+}
+
+.fa-envelope-open {
+  color: #000;
+}
+
+.fa-paint-brush {
+  color: #000;
+}
+
+.fa-code {
+  color: #000;
 }
 
 .reviews {
-  height: 100vh;
 
 }
 
 .blog {
-  height: 100vh;
 
 }
 
