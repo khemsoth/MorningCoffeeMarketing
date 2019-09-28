@@ -3,6 +3,19 @@ body {
   padding: 0;
 }
 
+input {
+  width: 100%
+}
+
+textarea {
+  width: 100%;
+}
+
+.input {
+  width: 98%;
+  margin: 0 auto;
+}
+
 .container {
   display: grid;
   grid-template-columns: auto;
