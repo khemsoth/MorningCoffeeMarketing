@@ -24,6 +24,10 @@
 
     </ul>
   </div>
+  <div class="contact-modal" id="contact-modal">
+    <p>Thank you for reaching out! We will get back to you as soon as we can!</p>
+    <button class='modal-button' id='contact-modal-btn'>Done</button>
+    </div>
   <div class="content">
     <div class="middle">
       <div class="home" id="home">
@@ -64,31 +68,56 @@
       </div>
       <div class="contact" id="contact"> 
         <h1 class="contact-title">Contact</h1>
-        <form>
+        <form action='/contact' method='post' role='form' name='contact-form'>
           <label for="Name">Name:</label><br>
           <div class="input">
-           <input type="text" name="Name" id="contact-name" placeholder="John Smith">
+           <input type="text" name="name" id="contact-name" placeholder="John Smith" required>
           </div>
           <br>
           <label for="Email">Email:</label><br>
           <div class="input">
-            <input type="email" name="Email" id="contact-email" placeholder="jsmith@gmail.com">
+            <input type="email" name="email" id="contact-email" placeholder="jsmith@gmail.com"required>
           </div>
           <br>
           <label for="Subject">Subject:</label><br>
           <div class="input">
-            <input type="text" name="Subject" id="contact-subject" placeholder="Subject">
+            <input type="text" name="subject" id="contact-subject" placeholder="Subject">
           </div>
           <br>
           <label for="Message">Message:</label><br>
           <div class="input">
-            <textarea name="Message" id="contact-message" cols="30" rows="10" placeholder="Message"></textarea>
+            <textarea name="message" id="contact-message" cols="30" rows="10" placeholder="Message" required></textarea>
           </div>
-          <button class="submit-btn">Submit</button>
+          <button class="submit-btn" id="form-submit">Submit</button>
         </form>
       </div>
     </div>
   </div>
   </div>
+  <script>
+    var form = document.getElementsByName('contact-form')[0];
+    var modal = document.getElementById('contact-modal');
+
+    function submitForm() {
+      console.log('submit click');
+      modal.style.display = 'block';
+    }
+
+    window.onclick = function(event, res) {
+      if(event.target == document.getElementById('contact-modal-btn')) {
+        console.log('modal btn click');
+        modal.style.display = 'none';
+        form.reset();
+      }
+      else if (event.target == document.getElementById('form-submit')) {
+        console.log('submit click');
+        modal.style.display = 'block';
+        
+      }
+      return true;
+    }
+  </script>
+
 </body>
 </html>
+

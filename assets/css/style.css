@@ -11,6 +11,23 @@ textarea {
   width: 100%;
 }
 
+.contact-modal {
+  display: none;
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px #000 solid;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.contact-modal > p {
+  text-align: center;
+}
+
 .input {
   width: 98%;
   margin: 0 auto;
