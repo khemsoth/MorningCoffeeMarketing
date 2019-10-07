@@ -21,6 +21,12 @@ figcaption {
   font-style: italic;
 }
 
+hr {
+  width: 90%;
+  border: 1px black solid;
+  margin-left: 0;
+}
+
 .contact-modal {
   display: none;
   height: 50%;
@@ -168,8 +174,39 @@ a.fa-instagram:hover {
   color: #000;
 }
 
-.reviews {
+.reviews-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+    'review1 review2'
+    'review3 review4'
+    ;
+}
 
+.review {
+  margin: 1rem;
+}
+
+.review-heading {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.review1 {
+  grid-area: review1;
+}
+
+.review2 {
+  grid-area: review2;
+}
+
+.review3 {
+  grid-area: review3;
+}
+
+.review4 {
+  grid-area: review4;
 }
 
 .blog {
