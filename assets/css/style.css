@@ -100,6 +100,10 @@ hr {
   color: #654321;
 }
 
+.navbar a.active {
+  border: 1px #fff solid;
+}
+
 .fa {
   color: #fff;
   margin: 0 1rem;

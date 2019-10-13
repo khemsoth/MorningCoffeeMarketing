@@ -13,9 +13,9 @@ require('dotenv').config();
 app.use(bodyParser.urlencoded({extended: true}))
 
 // ROUTES
-router.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname + '/index.html'));
-});
+
+var routes = require('./routes/htmlRoutes');
+app.use(routes);
 
 app.post('/contact', function(req, res) {
   const smtpTrans = nodemailer.createTransport({
