@@ -67,7 +67,7 @@ hr {
   grid-template-areas: 
     'logo . navbar';
   grid-area: header;
-  background-color: #a38068;
+  background-color: #fff;
   max-height: 15vh;
   padding: 1rem 0;
 }
@@ -94,17 +94,16 @@ hr {
 .navbar li a {
   text-decoration: none;
   margin: none;
-  color: #fff;
+  color: #4f3724;
   padding: .5rem;
 }
 
 .navbar li a:hover {
-  color: #654321;
-  background-color: #a38068;
+  color: #a38068;
 }
 
 .navbar a.active {
-  background-color: #4f3724;
+  color: #a38068;
 }
 
 .fa {
@@ -138,6 +137,14 @@ a.fa-instagram:hover {
   background-color: #a38068;
 }
 
+.banner {
+  background-image: url('https://static.wixstatic.com/media/7bad95_e460908fdead4118b8bed2b91f858841~mv2.jpg/v1/fill/w_1349,h_600,al_c,q_85,usm_0.66_1.00_0.01/7bad95_e460908fdead4118b8bed2b91f858841~mv2.webp');
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .banner-img {
   width: 100%;
   grid-area: 'banner';
@@ -148,8 +155,49 @@ a.fa-instagram:hover {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  padding: 3rem 0;
+  padding: 5rem 0;
   background-color: #a38068;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40%;
+  width: 40%;
+  margin: 0 3rem;
+}
+
+.banner-heading {
+  color: #4f3724;
+  font-size: 3rem;
+  text-align: right;  
+  margin-right: 1rem;
+}
+
+.banner-subheading {
+  color: #654321;
+  font-style: italic;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.banner-btn-cont {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.banner-btn {
+  border: 1px #4f3724 solid;
+  background: none;
+  color: #4f3724;
+  padding: .5rem;
+}
+
+.banner-btn:hover {
+  cursor: pointer; 
+  background-color: #a38068;
+  border: 1px #a38068 solid;
 }
 
 .about {
