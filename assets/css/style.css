@@ -192,6 +192,8 @@ a.fa-instagram:hover {
   background: none;
   color: #4f3724;
   padding: .5rem;
+  margin: 1rem;
+  border-radius: 5px;
 }
 
 .banner-btn:hover {
@@ -204,6 +206,22 @@ a.fa-instagram:hover {
   width: 100%;
   background: #fff;
   padding: 1rem 0;
+}
+
+.about-heading {
+  width: 50%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.about-heading h2, h3 {
+  margin-left: .5rem;
+}
+
+.about-heading h2 {
+  font-weight: bold; 
 }
 
 .solution {
@@ -226,12 +244,16 @@ a.fa-instagram:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;  
 }
 
 .home-img {
   margin: .5rem;
+}
+
+.about-desc {
+  margin-left: 2rem;
 }
 
 .fa-edit {
@@ -290,8 +312,7 @@ a.fa-instagram:hover {
 }
 
 .contact {
-  height: 100vh;
-
+  padding: 3rem .5rem;
 }
 
 .footer {
