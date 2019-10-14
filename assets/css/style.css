@@ -94,14 +94,16 @@ hr {
   text-decoration: none;
   margin: none;
   color: #fff;
+  padding: .5rem;
 }
 
 .navbar li a:hover {
   color: #654321;
+  background-color: #a38068;
 }
 
 .navbar a.active {
-  border: 1px #fff solid;
+  background-color: #4f3724;
 }
 
 .fa {
