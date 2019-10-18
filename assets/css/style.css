@@ -80,7 +80,7 @@ hr {
 
 .navbar {
   grid-area: navbar;
-  justify-self: center;
+  justify-self: right;
   align-self: end;
   list-style-type: none;
 
@@ -216,12 +216,10 @@ a.fa-instagram:hover {
   margin: 0 auto;
 }
 
-.about-heading h2, h3 {
-  margin-left: .5rem;
-}
-
 .about-heading h2 {
+  margin-left: .5rem;
   font-weight: bold; 
+
 }
 
 .solution {
@@ -250,6 +248,10 @@ a.fa-instagram:hover {
 
 .home-img {
   margin: .5rem;
+}
+
+.home-img-cont h3 {
+  margin-left: .5rem;
 }
 
 .about-desc {
