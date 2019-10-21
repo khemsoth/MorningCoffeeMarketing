@@ -107,7 +107,7 @@ hr {
 }
 
 .fa {
-  color: #fff;
+  color: #a38068;
   margin: 0 1rem;
   text-decoration: none;
 }
@@ -274,21 +274,59 @@ a.fa-instagram:hover {
   color: #000;
 }
 
+.reviews {
+  display: grid; 
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    'header'
+    'banner'
+    'reviews'
+    'footer';
+}
+
+.review-banner {
+  background-image: url('https://static.wixstatic.com/media/2e8ee11a9dd04e7cafa6fac0bc175ee5.jpg/v1/fill/w_1349,h_400,al_b,q_85,usm_0.66_1.00_0.01/2e8ee11a9dd04e7cafa6fac0bc175ee5.webp');
+  grid-area: banner;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.review-banner-content {
+  margin: 3rem 3rem;
+}
+
+.review-banner-content h2 {
+  font-size: 3rem;
+}
+
+.review-banner-content h3 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
 .reviews-content {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: 
+    'title title'
     'review1 review2'
     'review3 review4'
+    'more more'
     ;
 }
 
 .review {
   margin: 1rem;
+  background-color: rgba(255, 255, 255, .8);
+  padding: 1rem;
+  box-shadow: 5px 5px 8px;
 }
 
 .review-heading {
+  grid-area: title;
   font-style: italic;
   font-size: 1.5rem;
 }
@@ -309,6 +347,20 @@ a.fa-instagram:hover {
   grid-area: review4;
 }
 
+.read-more {
+  grid-area: more;
+  margin-left: 2rem;
+}
+
+.read-more a {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.read-more a:hover {
+  color: #a38068;
+}
+
 .blog {
 
 }
@@ -319,4 +371,5 @@ a.fa-instagram:hover {
 
 .footer {
   grid-area: footer;
+  background-color: #ddd;
 }
