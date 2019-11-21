@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #654321;
+  background-color: #fff;
 }
 
 input {
@@ -28,16 +28,20 @@ hr {
 }
 
 .contact-modal {
-  display: none;
-  height: 50%;
-  width: 50%;
+  padding: 1rem;
+  height: 80%;
+  width: 80%;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   border: 1px #000 solid;
-  background-color: #fff;
+  background-color: #a38068;
+  color: #000;
   border-radius: 10px;
+  box-shadow: 5px 5px 8px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .contact-modal > p {
@@ -372,4 +376,8 @@ a.fa-instagram:hover {
 .footer {
   grid-area: footer;
   background-color: #ddd;
+}
+
+#menu-contact:hover {
+  cursor: pointer;
 }

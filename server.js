@@ -17,6 +17,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 var routes = require('./routes/htmlRoutes');
 app.use(routes);
 
+
 app.post('/contact', function(req, res) {
   const smtpTrans = nodemailer.createTransport({
     host: 'smtp.gmail.com', 
@@ -44,14 +45,13 @@ app.post('/contact', function(req, res) {
       console.log(res);
     }
   })
+  res.redirect('/')
 })
 
 app.use('/', router);
-app.use(express.static(__dirname + '/assets'))
+app.use(express.static(__dirname + '/assets'));
 
 app.listen(PORT, function(req, res) {
   console.log('App listening on port: ' + PORT)
 });
 
-console.log(GMAIL_USER);
-console.log(process.env.GMAIL_USER);
