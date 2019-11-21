@@ -3,23 +3,23 @@ const router = express.Router();
 const path = require('path');
 
 router.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '../views/index.html'));
+  res.sendFile(path.join(__dirname, '../index.html'));
 });
 
 router.get('/solutions', function(req, res) {
-  res.sendFile(path.join(__dirname, '../views/solutions.html'));
+  res.sendFile(path.join(__dirname, '../solutions.html'));
 });
 
 router.get('/reviews', function(req, res) {
-  res.sendFile(path.join(__dirname, '../views/reviews.html'));
+  res.sendFile(path.join(__dirname, '../reviews.html'));
 });
 
 router.get('/blog', function(req, res) {
-  res.sendFile(path.join(__dirname, '../views/blog.html'));
+  res.sendFile(path.join(__dirname, '../blog.html'));
 });
 
 router.get('/contact', function(req, res) {
-  res.sendFile(path.join(__dirname, '../views/contact.html'));
+  res.sendFile(path.join(__dirname, '../contact.html'));
 });
 
 module.exports = router;
