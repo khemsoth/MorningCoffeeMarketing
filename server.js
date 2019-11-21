@@ -49,7 +49,7 @@ app.post('/contact', function(req, res) {
 })
 
 app.use('/', router);
-app.use(express.static(__dirname + '/assets'));
+app.use(express.static(__dirname));
 
 app.listen(PORT, function(req, res) {
   console.log('App listening on port: ' + PORT)
