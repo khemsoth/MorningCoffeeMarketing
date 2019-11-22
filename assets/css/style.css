@@ -136,7 +136,7 @@ a.fa-instagram:hover {
     'banner'
     'services'
     'about'
-    'contact';
+    'footer';
   height: 100vh;
   background-color: #a38068;
 }
@@ -154,13 +154,21 @@ a.fa-instagram:hover {
   grid-area: 'banner';
 }
 
-.solution-banner {
+.solution-banner-main {
+  background-color: #a38068;
+  grid-area: services;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
-  padding: 5rem 0;
-  background-color: #a38068;
+  padding: 5rem;
+}
+
+.solution-banner {
+  background-image: url('https://static.wixstatic.com/media/561197a90e6d4a6bb1cf92609952eb46.jpg/v1/fill/w_1349,h_400,al_c,q_85,usm_0.66_1.00_0.01/561197a90e6d4a6bb1cf92609952eb46.webp');
+  grid-area: banner;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner-content {
@@ -311,6 +319,7 @@ a.fa-instagram:hover {
 }
 
 .reviews-content {
+  background-color: #a38068;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -376,6 +385,10 @@ a.fa-instagram:hover {
 .footer {
   grid-area: footer;
   background-color: #ddd;
+}
+
+.footer-info {
+  text-align: center;
 }
 
 #menu-contact:hover {
