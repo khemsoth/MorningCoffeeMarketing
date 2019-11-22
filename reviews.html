@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type='text/css' href="./assets/css/style.css">
+  <link rel="stylesheet" type='text/css' href="/assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> 
   <title>Morning Coffee Marketing</title>
@@ -19,7 +19,7 @@
       <li><a href="/solutions">Solutions</a></li>
       <li><a href="/reviews" class="active">Reviews</a></li>
       <li><a href="/blog">Blog</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a id='menu-contact'>Contact</a></li>
       <a class="fa fa-facebook" href="https://www.facebook.com/MorningCoffeeMarketing/" target="_blank"></a>
       <a class="fa fa-twitter" href="https://twitter.com/morningcoffeemk" target="_blank"></a>
       <a class="fa fa-instagram" href="https://www.instagram.com/morningcoffeemarketing/" target="_blank"></a>
@@ -91,4 +91,34 @@
         </div>
       </div>
   </div>
+
+  <div class="contact-modal" id="contact-modal"> 
+    <h1 class="contact-title">Contact</h1>
+    <form action="/contact" method="POST" role='form' name='contact-form' id="contact-form">
+      <label for="Name">Name:</label><br>
+      <div class="input">
+       <input type="text" name="name" id="contact-name" placeholder="John Smith">
+      </div>
+      <br>
+      <label for="Email">Email:</label><br>
+      <div class="input">
+        <input type="email" name="email" id="contact-email" placeholder="jsmith@gmail.com">
+      </div>
+      <br>
+      <label for="Subject">Subject:</label><br>
+      <div class="input">
+        <input type="text" name="subject" id="contact-subject" placeholder="Subject">
+      </div>
+      <br>
+      <label for="Message">Message:</label><br>
+      <div class="input">
+        <textarea name="message" id="contact-message" cols="30" rows="10" placeholder="Message"></textarea>
+      </div>
+      <button type="submit" class="submit-btn" id="form-submit">Submit</button>
+      <button class='form-btn' type="button" id="form-cancel">Cancel</button>
+    </form>
+  </div>
+
+  <script src="/assets/js/index.js"></script>
+
 </body>
